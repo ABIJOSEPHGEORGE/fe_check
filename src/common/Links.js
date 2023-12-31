@@ -1,6 +1,6 @@
 // import React from "react";
 // import Error404 from "../pages/404";
-// import Login from "../pages/V3/Auth/Login";
+import Login from "../pages/V3/Auth/Login";
 import Signup from "../pages/V3/Auth/Signup";
 // import EditUserDetails from "../pages/V3/EditUserDetails";
 import Home from "../pages/V3/Home";
@@ -23,12 +23,12 @@ export const Links = [
         element: <Signup />,
         showInNavigation: true,
     },
-    // {
-    //     name: "Login",
-    //     path: "/login",
-    //     element: <Login />,
-    //     showInNavigation: true,
-    // },
+    {
+        name: "Login",
+        path: "/login",
+        element: <Login />,
+        showInNavigation: true,
+    },
     // {
     //     name: "Dashboard",
     //     path: "/dashboard/",
