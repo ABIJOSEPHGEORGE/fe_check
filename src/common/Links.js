@@ -2,7 +2,7 @@
 // import Error404 from "../pages/404";
 import Login from "../pages/V3/Auth/Login";
 import Signup from "../pages/V3/Auth/Signup";
-// import EditUserDetails from "../pages/V3/EditUserDetails";
+import EditUserDetails from "../pages/V3/EditUserDetails";
 import Home from "../pages/V3/Home";
 // import Matches from '../pages/V3/Matches';
 // import Connections from "../pages/V3/Connections";
@@ -29,12 +29,12 @@ export const Links = [
         element: <Login />,
         showInNavigation: true,
     },
-    // {
-    //     name: "Dashboard",
-    //     path: "/dashboard/",
-    //     element: <EditUserDetails />,
-    //     showInNavigation: true,
-    // },
+    {
+        name: "Dashboard",
+        path: "/dashboard/",
+        element: <EditUserDetails />,
+        showInNavigation: true,
+    },
     // {
     //     name: "Wallet",
     //     path: "/dashboard/wallet",

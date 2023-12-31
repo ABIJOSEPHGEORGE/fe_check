@@ -1,10 +1,11 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { HiOutlinePlus } from 'react-icons/hi2';
 import ImageCropper from '../../ImageCropping/ImageCropper';
+import UserStore from '../../../../contexts/UserStore';
 
 const EditPhotosCard = () => {
-
+    const { setErrors } = useContext(UserStore);
     const [crop, setCrop] = useState('');
     const [popup, setPopup] = useState(false);
     const [selectedPhotos, setSelectedPhotos] = useState([]);
