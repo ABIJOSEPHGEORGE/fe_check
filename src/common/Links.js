@@ -6,7 +6,7 @@ import EditUserDetails from "../pages/V3/EditUserDetails";
 import Home from "../pages/V3/Home";
 import Matches from '../pages/V3/Matches';
 import Connections from "../pages/V3/Connections";
-// import Shortlisted from '../pages/V3/Shortlisted';
+import Shortlisted from '../pages/V3/Shortlisted';
 // import Messages from "../pages/V3/Messages";
 // import WalletPage from "../pages/V3/Wallet";
 
@@ -53,12 +53,12 @@ export const Links = [
         element: <Connections/>,
         showInNavigation: true,
     },
-    // {
-    //     name: "Shortlisted",
-    //     path: "/dashboard/shortlisted",
-    //     element: <Shortlisted/>,
-    //     showInNavigation: true,
-    // },
+    {
+        name: "Shortlisted",
+        path: "/dashboard/shortlisted",
+        element: <Shortlisted/>,
+        showInNavigation: true,
+    },
     // {
     //     name: "Messages",
     //     path: "/dashboard/messages",
