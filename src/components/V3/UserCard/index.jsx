@@ -19,7 +19,7 @@ const UserCard = ({ type = 'preview', data, buttons, blockAfterAction}) => {
     const userData = type === 'preview' ? user : data;
     const previewButtons = [
         {name: 'Skip', action: '', icon: IoClose},
-        {name: 'Edit', action: '', icon: FaHeart},
+        {name: 'Connect', action: '', icon: FaHeart},
     ];
 
 
