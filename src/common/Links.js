@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 // import Error404 from "../pages/404";
 import Login from "../pages/V3/Auth/Login";
 import Signup from "../pages/V3/Auth/Signup";
@@ -8,7 +8,7 @@ import Matches from '../pages/V3/Matches';
 import Connections from "../pages/V3/Connections";
 import Shortlisted from '../pages/V3/Shortlisted';
 import Messages from "../pages/V3/Messages";
-// import WalletPage from "../pages/V3/Wallet";
+import WalletPage from "../pages/V3/Wallet";
 
 export const Links = [
     {
@@ -35,12 +35,12 @@ export const Links = [
         element: <EditUserDetails />,
         showInNavigation: true,
     },
-    // {
-    //     name: "Wallet",
-    //     path: "/dashboard/wallet",
-    //     element: <WalletPage/>,
-    //     showInNavigation: true,
-    // },
+    {
+        name: "Wallet",
+        path: "/dashboard/wallet",
+        element: <WalletPage/>,
+        showInNavigation: true,
+    },
     {
         name: "Matches",
         path: "/dashboard/matches",
