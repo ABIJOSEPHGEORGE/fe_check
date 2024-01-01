@@ -23,32 +23,32 @@ const Dashboard = ({tabItems, tabEdit, tabDispatch, children}) => {
   const socketRef = useRef(socket);
 
 
-  // const fetchUserInfo = useCallback(async () => {
-  //   if (!user) {
-  //     try {
-  //       const res = await status();
+  const fetchUserInfo = useCallback(async () => {
+    if (!user) {
+      try {
+        const res = await status();
 
-  //       if (!res) {
-  //         localStorage?.removeItem("session");
-  //         setSession(null);
-  //         setLoading(false);
-  //         navigate("/login", { replace: true });
-  //         return;
-  //       }
-  //       setUser(res);
-  //     } catch (error) {
-  //       console.error("Error fetching user info:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   } else {
-  //     setLoading(false);
-  //   }
-  // }, [user, session, navigate]);
+        if (!res) {
+          localStorage?.removeItem("session");
+          setSession(null);
+          setLoading(false);
+          navigate("/login", { replace: true });
+          return;
+        }
+        setUser(res);
+      } catch (error) {
+        console.error("Error fetching user info:", error);
+      } finally {
+        setLoading(false);
+      }
+    } else {
+      setLoading(false);
+    }
+  }, [user, session, navigate]);
 
-  // useEffect(() => {
-  //   // fetchUserInfo();
-  // }, [fetchUserInfo, navigate]);
+  useEffect(() => {
+    fetchUserInfo();
+  }, [fetchUserInfo, navigate]);
 
   useEffect(() => {
     socketRef.current = socket;
