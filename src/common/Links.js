@@ -4,7 +4,7 @@ import Login from "../pages/V3/Auth/Login";
 import Signup from "../pages/V3/Auth/Signup";
 import EditUserDetails from "../pages/V3/EditUserDetails";
 import Home from "../pages/V3/Home";
-// import Matches from '../pages/V3/Matches';
+import Matches from '../pages/V3/Matches';
 import Connections from "../pages/V3/Connections";
 // import Shortlisted from '../pages/V3/Shortlisted';
 // import Messages from "../pages/V3/Messages";
@@ -41,12 +41,12 @@ export const Links = [
     //     element: <WalletPage/>,
     //     showInNavigation: true,
     // },
-    // {
-    //     name: "Matches",
-    //     path: "/dashboard/matches",
-    //     element: <Matches/>,
-    //     showInNavigation: true,
-    // },
+    {
+        name: "Matches",
+        path: "/dashboard/matches",
+        element: <Matches/>,
+        showInNavigation: true,
+    },
     {
         name: "Connections",
         path: "/dashboard/connections",
