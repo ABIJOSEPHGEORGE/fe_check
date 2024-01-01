@@ -24,7 +24,7 @@ const PersonalSection = () => {
         if(countryId !== 'none'){
             const states = [{isoCode: 'none', name: 'Select'}, ...State.getStatesOfCountry(countryId)];
             const selectedCountry = Country.getCountryByCode(countryId);
-            handleSelectedLocation('country', selectedCountry.isoCode);
+            handleSelectedLocation('country', selectedCountry?.isoCode);
             setAddresses((prev) => ({...prev, states}));
         }else{
             handleSelectedLocation('country', 'none');
